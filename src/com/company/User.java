@@ -20,6 +20,7 @@ public class User implements ICreateRemoveUser{
     private String whereYouLive;
     private String describeYourself;
 
+    private boolean isLogIn = true;
 
     private String password;
     private String profilPhoto;
@@ -136,6 +137,14 @@ public class User implements ICreateRemoveUser{
         if (profilPhoto != null && profilPhoto.trim().length() > 0)
             this.profilPhoto = profilPhoto;
         throw new UserException("Invalid photo!");
+    }
+
+    public boolean getisLogIn() {
+        return isLogIn;
+    }
+
+    public void setLogIn(boolean logIn) {
+        isLogIn = logIn;
     }
 
     public void setBalanceMoney(double balanceMoney) {
