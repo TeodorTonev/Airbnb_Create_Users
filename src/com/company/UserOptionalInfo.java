@@ -4,7 +4,7 @@ import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class UserOptionalInfo {
+public class UserOptionalInfo {
     private String userSchool;
     private String work;
     private LocalTime timeZone;
